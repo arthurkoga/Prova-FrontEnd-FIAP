@@ -26,6 +26,7 @@
     font-weight: 400;
     padding: 1rem;
     width: fit-content;
+    margin-bottom: 15px;
 }
 
 .container .img {
@@ -67,5 +68,10 @@
 
     .container .water {
         display: none;
+    }
+
+    .container .h1,
+    .container .h2 {
+        margin-bottom: 0;
     }
 }
