@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+
+body {
+  background-color: black;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+.app {
+  width: 80%;
+  margin: 150px auto 0;
+}
+
+.app header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+header .title {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 100px;
+}
+
+header .items {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  text-transform: uppercase;
+}
+
+header h1 {
+  font-size: 5em;
+  color: white;
+  font-family: "Gotham HTF", sans-serif;
+  font-weight: 400;
+}
+
+header h2 {
+  color: #F80D5A;
+  font-size: 1.3em;
+  font-family: "Gotham HTF", sans-serif;
+  font-weight: 300;
+}
+
+section h3 {
+  font-size: 3em;
+  padding-bottom: 80px;
+  font-family: "Gotham HTF", sans-serif;
+  font-weight: 400;
+}
+
+.courseList {
+  list-style-type: none;
+  padding: 0;
+}
+
+.courseItem {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid gray;
+  height: 60px;
+  gap: 30px;
+}
+
+.courseItem:hover {
+  color: #F80D5A;
+  border-bottom: 1px solid #F80D5A;
+  transition: .5s;
+}
+
+.courseName {
+  font-size: 1.2em;
+  font-family: "PT Sans", sans-serif;
+  font-weight: 400;
+}
+
+.courseType {
+  font-size: 0.7em;
+  opacity: .5;
+  font-family: "Gotham HTF", sans-serif;
+  font-weight: 500;
+}
+
+.items li {
+  list-style: none;
+  font-family: "Gotham HTF", sans-serif;
+  font-weight: 500;
+  color: #8A959B;
+  height: fit-content;
+  cursor: pointer;
+  transition: .2s;
+}
+
+.items li:hover {
+  color: white;
+}
+
+.items li.active {
+  color: white;
+  border-top: 3px solid #F80D5A;
+}
+
+.app section {
+  width: 50%;
+}
+
+@media only screen and (max-width: 1000px) {
+  .app header {
+    display: flex;
+    flex-direction: column;
+  }
+
+  header .items {
+    margin-bottom: 20px;
+  }
+
+  .app section {
+    width: 100%;
+  }
+}

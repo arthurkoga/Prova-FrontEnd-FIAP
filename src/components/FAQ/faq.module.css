@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+.container {
+    width: 80%;
+    margin: 150px auto 0;
+}
+
+.container h1 {
+    font-size: 4rem;
+    font-weight: 400;
+    font-family: "Gotham HTF",sans-serif;
+}
+
+.container h2 {
+    font-size: 1.3rem;
+    font-weight: 100;
+    color: #ED145B;
+    font-family: "Gotham HTF",sans-serif;
+}
+
+.box {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 100px;
+}
+
+.item {
+    width: 30%;
+    min-height: 150px;
+    margin-bottom: 15px;
+}
+
+.item:hover h3{
+    color: #D5DBD3;
+}
+
+.item hr {
+    margin-bottom: 15px;
+    width: 50px;
+    transition: width 0.3s ease, border-color 0.3s ease;
+}
+
+.item h3 {
+    font-family: "Gotham HTF";
+    font-weight: 500;
+    font-size: 20px;
+    color: #949B99;
+    margin-bottom: 15px;
+}
+
+.item p {
+    opacity: 0;
+    transition: opacity 1s ease;
+    font-family: "Roboto", sans-serif ;
+    color: #949B99;
+}
+
+.item:hover p {
+    opacity: 1;
+    cursor: default;
+}
+
+.item:hover hr {
+    width: 100%;
+    border-color: #ED145B;
+    cursor: default;
+}
+
+@media only screen and (max-width: 1000px) {
+    .box {
+        flex-direction: column;
+    }
+
+    .item {
+        width: 100%;
+    }
+}

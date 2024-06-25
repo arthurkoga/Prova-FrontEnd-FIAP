@@ -1,0 +1,71 @@
+.container {
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+    padding: 100px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.title {
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 5rem;
+}
+
+.container .h1,
+.container .h2 {
+    display: block;
+    white-space: nowrap;
+    position: relative;
+    will-change: transform;
+    font-size: 4rem;
+    border-bottom: 2px solid white;
+    font-family: "Gotham HTF", sans-serif;
+    font-weight: 400;
+    padding: 1rem;
+    width: fit-content;
+}
+
+.container .img {
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.title2 {
+    position: absolute;
+    top: 36.5%;
+}
+
+.skills,
+.tutoriais {
+    color: transparent;
+    padding: 20px;
+    position: relative;
+    white-space: nowrap;
+    overflow: visible;
+    font-family: "Gotham HTF";
+    font-weight: 500;
+    font-size: 7rem;
+    font-style: italic;
+    -webkit-text-stroke: 2px rgba(69, 76, 79, 1);
+}
+
+.water {
+    margin-top: 15rem;
+}
+
+@media only screen and (max-width: 1000px) {
+    .container .img {
+        display: none;
+    }
+
+    .container .title2 {
+        display: none;
+    }
+
+    .container .water {
+        display: none;
+    }
+}
