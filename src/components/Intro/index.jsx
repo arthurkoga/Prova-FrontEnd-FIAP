@@ -12,7 +12,7 @@ export function Intro() {
         gsap.fromTo(`.${styles.h1}`, 
             { x: 0 }, 
             { x: -1500, 
-              ease: "power2.inOut",
+              ease: "power1",
               scrollTrigger: {
                   trigger: `.${styles.title}`,
                   start: 'top 80%',
@@ -25,7 +25,7 @@ export function Intro() {
         gsap.fromTo(`.${styles.h2}`, 
             { x: -1500 }, 
             { x: 0, 
-              ease: "power2.inOut",
+              ease: "power1",
               scrollTrigger: {
                   trigger: `.${styles.title}`,
                   start: 'top 80%',
@@ -34,39 +34,39 @@ export function Intro() {
               }
             }
         );
-
+             
         gsap.fromTo(`.${styles.skills}`,
             { x: -500 },
-            { x: -2000,
-              ease: "power2.inOut",
-              scrollTrigger: {
-                  trigger: `.${styles.title2}`,
-                  start: 'top 100%',
-                  end: 'bottom 10%',
-                  scrub: 1
-              }
+            {
+                x: -2000,
+                scrollTrigger: {
+                    trigger: `.${styles.title2}`,
+                    start: 'top 100%',
+                    end: 'bottom 10%',
+                    scrub: true,
+                }
             }
-          );
-           
-          gsap.fromTo(`.${styles.tutoriais}`,
+        );
+
+        gsap.fromTo(`.${styles.tutoriais}`,
             { x: -1500 },
-            { x: 0,
-                ease: "power2.inOut",
-              scrollTrigger: {
-                  trigger: `.${styles.title2}`,
-                  start: 'top 100%',
-                  end: 'bottom 10%',
-                  scrub: 1
-              }
+            {
+                x: 0,
+                scrollTrigger: {
+                    trigger: `.${styles.title2}`,
+                    start: 'top 100%',
+                    end: 'bottom 10%',
+                    scrub: true,
+                }
             }
-          );
+        );
     }, []);
 
     return (
         <div className={styles.container}>
             <div className={styles.title}>
-                <h1 className={styles.h1}>CURSOS E IMERSÕES. UMA NOVA CULTURA DE MERCADO. CURSOS E IMERSÕES. UMA NOVA CULTURA DE MERCADO. CURSOS E IMERSÕES. UMA NOVA CULTURA DE MERCADO. CURSOS E IMERSÕES. UMA NOVA CULTURA DE MERCADO.</h1>
-                <h2 className={styles.h2}>TECNOLOGIA, INOVAÇÃO E NEGÓCIOS. PRESENTE E FUTURO. TECNOLOGIA, INOVAÇÃO E NEGÓCIOS. PRESENTE E FUTURO. TECNOLOGIA, INOVAÇÃO E NEGÓCIOS. PRESENTE E FUTURO. TECNOLOGIA, INOVAÇÃO E NEGÓCIOS. PRESENTE E FUTURO.</h2>
+                <h1 className={styles.h1}>CURSOS E IMERSÕES. UMA NOVA CULTURA DE MERCADO. CURSOS E IMERSÕES. UMA NOVA CULTURA DE MERCADO. CURSOS E IMERSÕES. UMA NOVA CULTURA DE MERCADO.</h1>
+                <h2 className={styles.h2}>TECNOLOGIA, INOVAÇÃO E NEGÓCIOS. PRESENTE E FUTURO. TECNOLOGIA, INOVAÇÃO E NEGÓCIOS. PRESENTE E FUTURO. TECNOLOGIA, INOVAÇÃO E NEGÓCIOS. </h2>
             </div>
             <img className={styles.img} src={imgIntro} alt="Imagem de introdução" />
             <div className={styles.title2}>
